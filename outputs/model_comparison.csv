@@ -1,0 +1,5 @@
+Model,Accuracy,Churn_Precision,Churn_Recall,Churn_F1,ROC_AUC
+Logistic Regression,0.8395,0.731183,0.334152,0.458685,0.823551
+Decision Tree,0.7810,0.466083,0.523342,0.493056,0.685086
+Random Forest,0.8605,0.753968,0.466830,0.576631,0.853801
+Gradient Boosting,0.8690,0.782101,0.493857,0.605422,0.870589
