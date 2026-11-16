@@ -50,7 +50,7 @@ def main():
         if name == "Gradient Boosting": best_pipe, best_prob = pipe, prob
     pd.DataFrame(metrics).to_csv(out/"model_comparison.csv", index=False)
     scored = df.loc[Xte.index].copy()
-    scored["ChurnProbability"] = best_prob
+    scored["ChurnRisk"] = best_prob
     scored["RiskCategory"] = pd.cut(best_prob,[-.000001,.30,.60,1.0],
       labels=["Low","Medium","High"],include_lowest=True).astype(str)
     scored["ActualChurn"] = yte.values
