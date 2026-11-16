@@ -13,12 +13,12 @@ The training workflow was rerun on the supplied dataset using a stratified 80/20
 
 | Model | Accuracy | Churn precision | Churn recall | Churn F1 | ROC-AUC |
 |---|---:|---:|---:|---:|---:|
-| Logistic Regression | 0.840 | 0.731 | 0.334 | 0.459 | 0.824 |
+| Logistic Regression | 0.841 | 0.739 | 0.334 | 0.460 | 0.823 |
 | Decision Tree | 0.781 | 0.466 | 0.523 | 0.493 | 0.685 |
 | Random Forest | 0.861 | 0.754 | 0.467 | 0.577 | 0.854 |
 | Gradient Boosting | 0.869 | 0.782 | 0.494 | 0.605 | 0.871 |
 
-Gradient Boosting confusion matrix at threshold 0.50: TN=1,537, FP=56, FN=206, TP=201.
+Gradient Boosting confusion matrix at threshold 0.50: TN=1,537, FP=56, FN=206, TP=201. Logistic Regression emitted a convergence warning during training; its result should be treated as provisional until feature scaling and convergence are addressed.
 
 ## Risk bands
 - Low: probability <= 0.30
